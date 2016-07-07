@@ -1,7 +1,11 @@
 USE [iSell]
 GO
 
-/****** Object:  View [iSell].[iSell_Address_Type_vw]    Script Date: 3/23/2016 11:37:56 AM ******/
+/****** Object:  View [iSell].[iSell_Address_Type_vw]    Script Date: 3/23/2016 11:37:56 AM 
+
+test comment
+
+******/
 SET ANSI_NULLS ON
 GO
 
