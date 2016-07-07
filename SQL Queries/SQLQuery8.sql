@@ -1,0 +1,1 @@
+SELECT count(*) FROM dbo.iSell_Product_vw  WHERE product_type='AP' AND gender='M'
