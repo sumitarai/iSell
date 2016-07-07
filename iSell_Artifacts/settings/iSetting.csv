@@ -1,0 +1,25 @@
+﻿ID,setting,setting_type,value,extended_value,last_setup_datetime,User_ID,description
+1,ADMIN_LOGGING,BOOLEAN,TRUE,NULL,2014-07-12 13:06:13.873,1,Toggel the setting to switch Admin User Logging On or Off. Default setting is On (TRUE).
+2,USER_LOGGING,BOOLEAN,TRUE,NULL,2014-07-12 13:06:13.987,1,Toggel the setting to switch User Logging On or Off. Default setting is On (TRUE).
+3,ADMIN_LOGGING_RETENTION_DAYS,NUMERIC,90,NULL,2014-07-12 13:06:13.990,1,Set the Admin User Logging data retention days. Default setting is 90.
+4,USER_LOGGING_RETENTION_DAYS,NUMERIC,90,NULL,2014-07-12 13:06:13.990,1,Set the User Loggin data retention days. Default setting is 90.
+5,ITEMS_PER_ROW_MAINPAGE,NUMERIC,3,NULL,2014-07-12 13:06:13.990,1,Define the number of items per row in main page. Default setting is 3. Number if items per row can be between 1 to 6. Above 6 will set to 6.
+6,ITEMS_PER_ROW_APPAREL,NUMERIC,2,NULL,2014-07-12 13:06:13.990,1,Define the number of items per row for Apparel. Default setting is 2. Number if items per row can be between 1 to 6. Above 6 will set to 6.
+7,ITEMS_PER_ROW_HANDICRAFT,NUMERIC,3,NULL,2014-07-15 19:54:43.140,1,Define the number of items per row for Handicraft. Default setting is 2. Number if items per row can be between 1 to 6. Above 6 will set to 6.
+8,ITEMS_PER_ROW_JEWELRY,NUMERIC,2,NULL,2014-07-12 13:06:13.990,1,Define the number of items per row for Jewelry. Default setting is 2. Number if items per row can be between 1 to 6. Above 6 will set to 6.
+9,ITEMS_PER_ROW_MUSIC,NUMERIC,2,NULL,2014-07-12 13:06:13.993,1,Define the number of items per row for Music. Default setting is 2. Number if items per row can be between 1 to 6. Above 6 will set to 6.
+10,ITEMS_PER_ROW_SALEPAGE,NUMERIC,4,NULL,2014-07-15 21:58:12.800,1,Define the number of items per row for Sale. Default setting is 2. Number if items per row can be between 1 to 6. Above 6 will set to 6.
+11,ITEMS_PER_ROW_SEARCHPAGE,NUMERIC,5,NULL,2014-07-12 13:06:13.993,1,Define the number of items per row in search page. Default setting is 5. Number if items per row can be between 1 to 6. Above 6 will set to 6.
+12,SALES_TAX,NUMERIC,8.1,NULL,2014-07-19 21:15:39.923,1,Sales Tax that is applicable to all product sale.
+50,WEBSITE_TYPE,WEBSITE_TYPE_OPTION_LIST,PRODUCTION,NULL,2014-07-12 13:06:13.993,1,Toggel the setting to switch the Website Type {PRODUCTION or DEMO or TEST or DEVELOPMENT}. Default setting is PRODUCTION.
+100,PRODUCTS_IN_THE_MAINPAGE,PRODUCT_LIST,"100,101,102,103,104,105,106,107",NULL,2014-07-28 21:46:10.333,1,Define the list of PRODUCT IDs seperate by comma that are to display on the main page.<br><i>Use drop down list on the right panel to manage the list</i>
+101,PRODUCTS_IN_THE_SALESPAGE_grp1,PRODUCT_LIST,"500,100,105",10.0,2014-07-15 21:48:50.373,1,Discount Group 1. Define the list of PRODUCT IDs seperate by comma that are to display on the sales page.<br><i>Use drop down list on the right panel to manage the list</i>
+<br><br><b>Note - This setting has two steps</b><ul><li>Select Products for Sale</li><li>Input Discount % and Click Update button to Confirm.</li></ul>
+102,PRODUCTS_IN_THE_SALESPAGE_grp2,PRODUCT_LIST,"501,103,104,106,107,550,700",15.0,2014-07-15 21:52:31.720,1,Discount Group 2. Define the list of PRODUCT IDs seperate by comma that are to display on the sales page.<br><i>Use drop down list on the right panel to manage the list</i>
+<br><br><b>Note - This setting has two steps</b><ul><li>Select Products for Sale</li><li>Input Discount % and Click Update button to Confirm.</li></ul>
+103,PRODUCTS_IN_THE_SALESPAGE_grp3,PRODUCT_LIST,502,20.0,2014-07-15 21:49:32.500,1,Discount Group 3. Define the list of PRODUCT IDs seperate by comma that are to display on the sales page.<br><i>Use drop down list on the right panel to manage the list</i>
+<br><br><b>Note - This setting has two steps</b><ul><li>Select Products for Sale</li><li>Input Discount % and Click Update button to Confirm.</li></ul>
+104,PRODUCTS_IN_THE_SALESPAGE_grp4,PRODUCT_LIST,503,NULL,2014-07-14 23:21:07.347,1,Discount Group 4. Define the list of PRODUCT IDs seperate by comma that are to display on the sales page.<br><i>Use drop down list on the right panel to manage the list</i>
+<br><br><b>Note - This setting has two steps</b><ul><li>Select Products for Sale</li><li>Input Discount % and Click Update button to Confirm.</li></ul>
+105,PRODUCTS_IN_THE_SALESPAGE_grp5,PRODUCT_LIST,504,NULL,2014-07-14 23:21:07.347,1,Discount Group 5. Define the list of PRODUCT IDs seperate by comma that are to display on the sales page.<br><i>Use drop down list on the right panel to manage the list</i>
+<br><br><b>Note - This setting has two steps</b><ul><li>Select Products for Sale</li><li>Input Discount % and Click Update button to Confirm.</li></ul>

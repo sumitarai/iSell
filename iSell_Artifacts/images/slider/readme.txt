@@ -1,0 +1,1 @@
+Keep all images to 800x200

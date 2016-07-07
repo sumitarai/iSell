@@ -1,0 +1,20 @@
+USE [iSell]
+GO
+
+/****** Object:  View [iSell].[iSellAppErrorLog_vw]    Script Date: 3/23/2016 11:40:59 AM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+CREATE VIEW [iSell].[iSellAppErrorLog_vw] AS
+	SELECT 
+		LogID, Ins_Date, User_Name, Module_Name, App_Msg, Error_Msg 
+	FROM 
+		App_Error_Log;
+
+GO
+
+

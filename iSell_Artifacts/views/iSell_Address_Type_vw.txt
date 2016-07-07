@@ -1,0 +1,25 @@
+USE [iSell]
+GO
+
+/****** Object:  View [iSell].[iSell_Address_Type_vw]    Script Date: 3/23/2016 11:37:56 AM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+CREATE VIEW [iSell].[iSell_Address_Type_vw] AS
+SELECT 
+	Address_Type, 
+	CASE Address_Type 
+		WHEN 'M' THEN 'Mailing'
+		WHEN 'B' THEN 'Business'
+		WHEN 'P' THEN 'Billing'
+	END Address_Type_Txt	
+FROM
+	business_info;
+
+GO
+
+

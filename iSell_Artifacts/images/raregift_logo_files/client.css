@@ -1,0 +1,419 @@
+﻿  /*Client pages specific styles */
+
+.clienttitle
+{
+    display: block;
+    float: left;
+    text-align: left;
+    vertical-align:top;
+    width:600px;
+    height:100px;
+}
+
+.clientlogincontrol
+{
+     background-color:#fff;     
+     top:50px;
+     vertical-align:middle;
+     height:100px;
+     text-align:left;
+     color:#003399;
+}
+
+
+.clientlogo
+{   
+    background-image:url('logo.png');
+    background-repeat:no-repeat;
+    background-position:left;
+    height:100px;
+    vertical-align:top;
+    cursor:pointer;        
+}
+
+/*Define CSS for clinet main content, used in Client.Master*/
+.clientPageHeader
+{
+    background-color: #fff;
+    width:1000px;
+	height:120px;
+	padding:0px 10px 20px 20px; /*top right bottom left */
+	border: 1px solid #d1cba8;
+	box-shadow: 0px 3px 15px 3px #B3B2B3; /*box-shadow: none|h-shadow v-shadow blur spread color |inset|initial|inherit;*/
+	    -moz-box-shadow: 0px 3px 15px 3px #B3B2B3;
+	    -webkit-box-shadow: 0px 3px 15px 3px #B3B2B3;
+	margin: 0 auto;	
+	border-radius:3px;
+        -webkit-border-radius: 3px;
+	    -moz-border-radius: 3px;	 
+}
+
+.clientPageMain
+{
+    background-color: #fff;
+	width:1000px;
+	height:100%;
+	padding:0px 10px 20px 20px; /*top bottom right left */
+	border: 1px solid #d1cba8;
+	box-shadow: 0px 3px 15px 3px #B3B2B3; /*box-shadow: none|h-shadow v-shadow blur spread color |inset|initial|inherit;*/
+	    -moz-box-shadow: 0px 3px 15px 3px #B3B2B3;
+	    -webkit-box-shadow: 0px 3px 15px 3px #B3B2B3;
+	margin: 0 auto;	
+	border-radius:3px;
+        -webkit-border-radius: 3px;
+	    -moz-border-radius: 3px;
+	}
+
+.clientPageFooter
+{
+    background-color: #fff;
+    width:1000px;
+	height:100%;
+	padding:0px 10px 20px 20px; /*top bottom right left */
+	border: 1px solid #d1cba8;
+	box-shadow: 0px 3px 15px 3px #B3B2B3; /*box-shadow: none|h-shadow v-shadow blur spread color |inset|initial|inherit;*/
+	    -moz-box-shadow: 0px 3px 15px 3px #B3B2B3;
+	    -webkit-box-shadow: 0px 3px 15px 3px #B3B2B3;
+	margin: 0 auto;	
+	border-radius:3px;
+        -webkit-border-radius: 3px;
+	    -moz-border-radius: 3px;
+    }
+
+.clientPageMenu
+{
+    background-color:#fff;
+    float: left;
+    text-align: left;
+    width: 700px;    
+    height:40px;
+}    
+
+.clientPageSearch
+{
+    display:block;
+    background-color:#fff;
+    top:10px;
+    float:right;
+    text-align: right;
+    height:40px;
+    vertical-align:middle;    
+}
+
+
+
+/* TAB MENU for Client 
+----------------------------------------------------------*/
+	
+	
+div.clientmenu
+{
+    padding: 0px 4px 4px 4px;  /* top right bottom left */       
+}
+
+div.clientmenu ul
+{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;width: auto;
+}
+
+div.clientmenu ul li a, div.menu ul li a:visited
+{
+    background-color: #F0F0ED;
+    border: 4px #fff solid;
+    color: #003399;
+    display: block;
+    line-height: 1.35em;
+    padding: 4px 20px;
+    text-decoration: none;
+    white-space: nowrap;
+    font-family:Calibri, Arial, Times New Roman;
+    font-size:medium;
+    font-weight:normal;    
+}
+
+div.clientmenu ul li a:hover
+{
+    background-color: #bfcbd6;
+    color: #465c71;
+    text-decoration: none;
+    font-weight:bold;
+}
+
+div.clientmenu ul li a:active
+{
+    background-color: #465c71;
+    color: #cfdbe6;
+    text-decoration: none;
+}
+
+/*Table styles */
+.fulltable
+{
+    width:100%;
+    height:300px;    
+    border-color:#66FF99;
+    border:none;
+    border-width:0px;
+    padding:6px 6px 6px 6px;      
+    vertical-align:top;  
+}
+
+.fulltable_nopadding
+{
+    width:100%;
+    height:300px;    
+    border-color:#66FF99;
+    border:none;
+    border-width:1px;
+    padding:0px 0px 0px 0px;        
+}
+
+.compacttable
+{
+    width:100%;
+    border-color:#66FF99;
+    border:solid;
+    border-width:1px;
+    padding:2px 2px 2px 2px; 
+    font-family:Calibri;
+    font-size:0.9em;
+    font-weight:normal;           
+}
+
+.table_one_product_detail
+{
+    width:100%;
+    height:300px;    
+    border-color:#66FF99;
+    border:none;
+    border-width:1px;
+    padding:0px 0px 0px 0px;        
+    vertical-align:top;
+} 
+
+table_list_of_images
+{
+    height:40px;
+    border-bottom-color::#66FF99;
+    border:none;
+    border-width:1px;
+    padding:20px 20px 20px 20px;        
+    vertical-align:middle;    
+}
+
+/*
+Rectangular cells are used in http://localhost:64933/order.aspx, http://localhost:64933/order_confirmation.aspx
+Used in clsShoppingCart.showShoppingCartItem(), clsShoppingCart.showShoppingCartItemInOrderConfirmation()
+*/
+.tablecell_plain
+{
+    border-color:#66FF99;
+    border:solid;    
+    border-width:1px;
+    padding:20px 20px 20px 20px;
+    vertical-align:middle;     
+    background-color:#FFF;  
+}
+
+.tablecell
+{
+    font-size:small;
+    font-weight:normal;    
+    border-color:#66FF99;
+    border:solid;    
+    border-width:1px;
+    padding:20px 20px 20px 20px;
+    vertical-align:middle;     
+    background-color:#FFF;
+    border-radius:6px;
+    HorizontalAlign:"Center";
+    /* only put the shadow on hover
+    box-shadow: 3px 3px 3px #888888;    
+    */
+}
+
+.tablecell:hover
+{
+    text-decoration:none;
+    box-shadow: 3px 3px 3px #888888;          
+}
+
+.tablecelllinkedimage
+{
+    border-color:#66FF99;
+    border:solid;    
+    border-width:1px;
+    padding:6px 6px 6px 6px;
+    height:70px;
+    width:65px;
+    vertical-align:middle;     
+    background-color:#FFF;
+    border-radius:4px;
+    HorizontalAlign:"Center";
+    box-shadow: 2px 2px 2px #888888;    
+    cursor:pointer;
+}
+
+.image_large 
+{
+    height:400px;
+}
+
+.image_normal
+{
+    height:300px;
+}
+
+.image_small
+{
+    height:120px;
+}
+.image_thumb
+{
+    height:65px;
+}
+
+.tablecelllinkedimage:hover
+{
+    background-color:#FFFFE0;
+    border-color:#FF0000;
+    border:solid;    
+    border-width:2px;
+} 
+
+.tablecelllinkedimage_social
+{
+    border-color:#66FF99;
+    border:solid;    
+    border-width:0px;
+    padding:2px 2px 2px 2px;
+    vertical-align:middle;     
+    background-color:#FFF;
+    border-radius:2px;
+    HorizontalAlign:"Center";
+    box-shadow: 0px 0px 0px #888888;        
+}
+
+.tablecelllinkedimage_social:hover
+{
+    background-color:#FFFFE0;
+    border-color:#FF0000;
+    border:solid;
+    border-width:0px;
+    cursor:pointer;
+} 
+
+
+.classictable
+{
+    width:100%;
+    vertical-align:top;
+    padding:20px 20px 20px 20px;   /* top, right, bottom, left */
+    border:solid;
+    border-width:0px;
+}
+
+
+.classictable_nopadding
+{
+    width:100%;
+    vertical-align:top;
+    padding:0px 0px 0px 0px;   /* top, right, bottom, left */
+    border:solid;
+    border-width:0px;
+}
+
+.tdalignMiddle
+{
+    vertical-align:middle;
+    padding:10px 10px 10px 10px;   
+}
+
+.innertable
+{
+    width:100%;
+    vertical-align:top;
+    border:solid;
+    border-width:0px;
+    font-family:@Batang;
+    font-size:small;
+}
+
+.classictr
+{
+    vertical-align:top;
+}
+
+.classictr_bottom
+{
+    vertical-align:bottom;
+}
+
+
+.skybluetr
+{
+    vertical-align:top;
+    background: #87CEEB; /*SkyBlue*/        
+}
+
+.white-on-blue-section
+{
+    height:26px;
+    background-color:#465c71;
+    color:#FFFFFF;
+    font-weight:bold;
+}
+
+/* Fx. set the header height to 100px */
+.ajax__tab .ajax__tab_tab {
+	height:100px; /* here */
+	margin:0;
+	padding:10px 4px;
+}
+
+
+/* Then increase the body's top attribute in order to expose the rest of the tab header */
+.ajax__tab .ajax__tab_body
+{
+	position:absolute;
+	top:100px; /* here */
+	width:205px;
+}
+
+/*Increase the height of tab*/
+.ajax__tab_xp .ajax__tab_tab 
+{
+    height: 41px;
+}
+
+/* Rounded Corners*/
+
+.roundedPanel
+{	
+	background-color:#465c71;
+	color:black;
+	font-weight:bold;
+}
+
+/*Drag Panel*/
+.dragMe {
+	width:100%;
+	height:26px;
+	text-align:center;
+	cursor:move;
+	font-weight:bold;
+	color:#fff; /*drageMe title color */
+}
+
+/*Drag Panel Header*/
+.panelHeader
+{
+     background-color:#465c71;
+     height:26px;
+     border-style:solid;
+     border-width:1px;
+     border-bottom-color:Orange;
+}
+

@@ -1,0 +1,33 @@
+USE [iSell]
+GO
+
+/****** Object:  View [iSell].[iSellRecentlyViewedProduct_vw]    Script Date: 3/23/2016 11:42:03 AM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+CREATE VIEW [iSell].[iSellRecentlyViewedProduct_vw] AS
+SELECT DISTINCT TOP 10000 rvp.product_id, pp.picture_path, pp.picture_name, prd.product_type, rvp.viewed_dateTime, rvp.customer_ip_address, rvp.email_id
+  FROM recently_viewed_product rvp
+    INNER JOIN  product prd 
+     ON rvp.product_id = prd.product_id  
+     INNER JOIN  product_picture pp  
+     ON rvp.product_id = pp.product_id            
+     WHERE  pp.active_ind ='Y' 
+     AND picture_seq_id=(SELECT MIN(x.picture_seq_id) FROM product_picture x 
+						WHERE pp.product_id = x.product_id AND x.active_ind='Y') 
+	 AND rvp.viewed_dateTime = (SELECT MAX(x.viewed_DateTime) FROM recently_viewed_product x WHERE rvp.product_id = x.product_id AND rvp.Customer_IP_Address = x.Customer_IP_Address)					
+     AND NOT EXISTS
+		(SELECT 'FOUND' FROM order_header oh INNER JOIN order_detail od ON oh.order_id = od.order_id
+		AND rvp.customer_ip_address = oh.customer_ip_address
+		AND oh.Order_Entry_Completed_Date IS NULL
+		AND od.product_id = rvp.product_id)     
+ORDER BY viewed_dateTime DESC
+
+
+GO
+
+

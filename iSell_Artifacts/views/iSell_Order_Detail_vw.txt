@@ -1,0 +1,45 @@
+USE [iSell]
+GO
+
+/****** Object:  View [iSell].[iSell_Order_Detail_vw]    Script Date: 3/23/2016 11:38:24 AM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+CREATE VIEW [iSell].[iSell_Order_Detail_vw] AS
+SELECT
+	oh.order_id,
+	oh.submitted_date,
+	oh.description,
+	oh.customer_ip_address,
+	oh.order_entry_completed_date,
+	oh.requested_date,
+	od.product_id,
+	od.quantity,
+	od.unit_price,
+	os.first_name as customer_first_name,
+	os.last_name as customer_last_name,
+	os.street,
+	os.address_line_2 as aptOrSuite,
+	os.city,
+	os.state_cd,
+	os.zip,
+	os.order_status,
+	osm.shipping_tracking_no,
+	os.email_id
+FROM
+	order_header oh
+	INNER JOIN order_detail od
+	ON oh.order_id = od.order_id
+	LEFT OUTER JOIN order_shipping os
+	ON oh.order_id = os.order_id
+	LEFT OUTER JOIN order_shipping_method osm
+	ON oh.order_id = osm.order_id
+		
+
+GO
+
+
